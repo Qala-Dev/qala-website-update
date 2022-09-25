@@ -14,6 +14,9 @@ module.exports = {
         "dark-bg": "#060916",
         "nav-blue": "#141B3A",
         "nav-white": "#F6F7FC",
+        "facebook-blue": "#1877F2",
+        "twitter-blue": "#1DA1F2",
+        "linkedin-blue": "#2867B2",
       },
       fontFamily: {
         sans: ["Open Sans", ...defaultTheme.fontFamily.sans],
