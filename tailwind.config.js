@@ -33,8 +33,13 @@ module.exports = {
         "darker-blue": "#5772C5",
         "darker-grey": "#C5CCEB",
         "placeholder-grey": "#A5A6A8",
+        "qala-secondary":"#00DBDF",
+        "dark-blue-main":"#27315D",
+        "primary-3":"#A2B2DF",
+        "primary-7":"#2F4380"
       },
       fontFamily: {
+        "Gilroy":['Gilroy'],
         sans: ["Open Sans", ...defaultTheme.fontFamily.sans],
       },
     },

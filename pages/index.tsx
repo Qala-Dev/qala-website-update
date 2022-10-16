@@ -27,16 +27,6 @@ const Carousels: string[] = [
   "carousel_3.png",
 ];
 
-// const SponsorLight: StaticImageData[] = [
-//   BitnobLight,
-//   HumanLight,
-//   PaxfulLight,
-//   BitcoinFoundationLight,
-//   ChaincodeLight,
-//   LunarLight,
-//   CoinbaseLight,
-//   OkcoinLight,
-// ];
 const SponsorLight: string[] = [
   "./sponsor/bitnob-light.png",
   "./sponsor/human-light.png",
@@ -330,7 +320,7 @@ const Home: NextPage = () => {
         </div>
         <InvertedContainer className="before:bg-nav-white after:bg-nav-white dark:before:bg-dark-bg dark:after:bg-dark-bg ">
           <div className="bg-blue dark:bg-dark-fellow py-32 flex flex-col justify-center items-center lg:px-[10.95rem] px-4">
-            <p className="text-white font-light text-center text-xl lg:leading-[2.9rem] lg:text-[2.5rem] w-[16.1rem] lg:w-[40.25rem]">
+            <p className="text-white font-light font-Gilroy text-center text-xl lg:leading-[2.9rem] lg:text-[2.5rem] w-[16.1rem] lg:w-[40.25rem]">
               Check out our merchandise! You just might see something you like.
             </p>
             <div className="w-full mt-10 lg:mt-16">
@@ -340,7 +330,7 @@ const Home: NextPage = () => {
         </InvertedContainer>
         <div className="flex flex-col justify-center items-center px-4 mb-32">
           <div className="w-full lg:w-[40.25rem]">
-            <p className="font-light text-xl lg:text-[2.5rem] text-center text-nav-blue dark:text-primary-1">
+            <p className="font-light text-Gilroy text-xl lg:text-[2.5rem] text-center text-nav-blue dark:text-primary-1">
               Know more about us
             </p>
             <div className="flex flex-col lg:flex-row items-center justify-center mt-4 lg:mt-8">
@@ -372,7 +362,7 @@ const Home: NextPage = () => {
               </div>
             </div>
             <div className=" mt-16 lg:mt-32">
-              <p className="font-light text-xl lg:text-[2.5rem] text-center lg:leading-[2.9rem] text-nav-blue dark:text-primary-1">
+              <p className="font-light text-xl lg:text-[2.5rem] text-center lg:leading-[2.9rem] text-nav-blue dark:text-primary-1 font-Gilroy">
                 Sign up for our weekly bitcoin newsletter written for African
                 developers. All good stuff, no fluff.
               </p>
