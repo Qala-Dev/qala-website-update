@@ -233,7 +233,7 @@ const Apply: NextPage = () => {
       </div>
       <div className="mt-20 bg-fellow dark:bg-dark-fellow py-16 lg:py-64 flex flex-col items-center">
         <div className="w-full lg:w-[40.25rem] flex flex-col px-4 lg:px-0 items-center">
-          <p className="text-center font-light font-Gilroy text-xl lg:text-[2.5rem] lg:leading-[2.875rem] w-[16.2rem] lg:w-full">
+          <p className="text-center font-light font-Gilroy text-nav-blue dark:text-primary-1 text-xl lg:text-[2.5rem] lg:leading-[2.875rem] w-[16.2rem] lg:w-full">
             Have any questions about the process? Drop us a question here.
           </p>
           <div className="mt-8 lg:mt-16 w-full">
