@@ -4,6 +4,7 @@ import BigDarkModeLogo from "../../public/big_dark_logo.svg";
 import Link from "next/link";
 import Toggler from "~/components/toggler";
 import { useTheme } from "next-themes";
+import { useRouter } from "next/router";
 
 interface Links {
   title: string;
@@ -21,6 +22,8 @@ const LINKS: Links[] = [
 ];
 export default function Nav() {
   const { theme } = useTheme();
+  const router = useRouter();
+  console.log(router.pathname);
   return (
     <div className="flex justify-between items-center px-[10.95rem] pt-10 pb-4 bg-light-bg/[.7] dark:bg-dark-bg/[.85]">
       <Link href={"/"} className="cursor-pointer">
@@ -35,7 +38,11 @@ export default function Nav() {
           {LINKS.map((link, index) => (
             <li
               key={index}
-              className="ml-6 text-base font-normal font-sans text-nav-blue dark:text-nav-white"
+              className={`${
+                router.pathname === `/${link.url}`
+                  ? "font-semibold text-blue-main border-b-2 border-blue-main"
+                  : "text-nav-blue dark:text-nav-white font-normal"
+              } ml-6 text-base font-sans leading-[21.79px]`}
             >
               <Link href={`/${link.url}`}>
                 <a>{link.title}</a>
