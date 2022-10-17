@@ -30,7 +30,7 @@ export default function Nav() {
           <Image src={BigDarkModeLogo} alt="Qala Logo" />
         )}
       </Link>
-      <div className="flex items-center">
+      <div className="items-center hidden lg:flex">
         <ul className="flex items-center">
           {LINKS.map((link, index) => (
             <li

@@ -1,0 +1,62 @@
+[
+  {
+    "image": "./fellows/omoniyi.png",
+    "name": "Omoniyi Ilesanmi",
+    "role": "Fullstack Developer"
+  },
+  {
+    "image": "./fellows/collins.png",
+    "name": "Collin Rukundo",
+    "role": "Fullstack Developer"
+  },
+  {
+    "image": "./fellows/enie.png",
+    "name": "Enigbe Ochekliye",
+    "role": "Fullstack Developer"
+  },
+  {
+    "image": "./fellows/theo.png",
+    "name": "Theophilus Isah",
+    "role": "Fullstack Developer"
+  },
+  {
+    "image": "./fellows/olutobi.png",
+    "name": "Olutobi Adeyemi",
+    "role": "Fullstack Developer"
+  },
+  {
+    "image": "./fellows/peter.png",
+    "name": "Peter Tyonum",
+    "role": "Fullstack Developer"
+  },
+  {
+    "image": "./fellows/raphael.png",
+    "name": "Raphael Osaze Eyerin",
+    "role": "Fullstack Developer"
+  },
+  {
+    "image": "./fellows/vlad.png",
+    "name": "Vladimir Fomene",
+    "role": "Fullstack Developer"
+  },
+  {
+    "image": "./fellows/dimeji.png",
+    "name": "Oladimeji Omotosho",
+    "role": "Fullstack Developer"
+  },
+  {
+    "image": "./fellows/munirat.png",
+    "name": "Munirat Olayiwola",
+    "role": "Fullstack Developer"
+  },
+  {
+    "image": "./fellows/jenie.png",
+    "name": "Jennifer Ezeobi",
+    "role": "Fullstack Developer"
+  },
+  {
+    "image": "./fellows/bamidele.png",
+    "name": "Bamidele Oluwatobi",
+    "role": "Fullstack Developer"
+  }
+]

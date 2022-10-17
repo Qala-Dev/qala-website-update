@@ -36,7 +36,8 @@ module.exports = {
         "qala-secondary":"#00DBDF",
         "dark-blue-main":"#27315D",
         "primary-3":"#A2B2DF",
-        "primary-7":"#2F4380"
+        "primary-7":"#2F4380",
+        "brown": "#231E1B"
       },
       fontFamily: {
         "Gilroy":['Gilroy'],
