@@ -37,7 +37,10 @@ module.exports = {
         "dark-blue-main":"#27315D",
         "primary-3":"#A2B2DF",
         "primary-7":"#2F4380",
-        "brown": "#231E1B"
+        "brown": "#231E1B",
+        "fellow_hover":"#DDE5FF",
+        "skill_blue": "#3A54A0",
+        "interview-blue":"#233260"
       },
       fontFamily: {
         "Gilroy":['Gilroy'],
