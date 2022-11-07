@@ -70,7 +70,7 @@ export default function FellowDetails({ fellowIndex, setCurrentPage }: Props) {
           </div>
           <div className="flex mt-4">
             <div className="mr-2">
-              <Github />
+              <Github link="" />
             </div>
             <div className="mr-2">
               <Meduim />
