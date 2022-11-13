@@ -66,25 +66,32 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <div className="mt-32 flex flex-col items-center justify-center">
-          <H1 className="w-[50rem] leading-[4.76rem]">
-            Bitcoin for Africa, by Africans.
-          </H1>
-          <p className="text-lg text-nav-blue text-center mt-6 w-[41.4rem] dark:text-primary-1">
-            Qala is a program designed to{" "}
-            <span className="font-bold">
-              train the next generation of African Bitcoin and Lightning
-              developers.
-            </span>{" "}
-            Our goal is to create a pathway for African software developers to
-            transition into building for Bitcoin and Lightning.
-          </p>
-          <div className="w-[12.4rem] mt-12">
-            <Button>Join Qala</Button>
+        <div className="flex items-center justify-center">
+          <div className="mt-16 lg:mt-32 w-full lg:w-[50rem] flex flex-col items-center px-4 lg:px-0">
+            <H1 className="leading-[2.375rem] lg:leading-[4.76rem] ">
+              Bitcoin for Africa, by Africans.
+            </H1>
+            <p className="text-lg text-nav-blue text-center mt-6 w-full lg:w-[41.4rem] dark:text-primary-1">
+              Qala is a program designed to{" "}
+              <span className="font-bold">
+                train the next generation of African Bitcoin and Lightning
+                developers.
+              </span>{" "}
+              Our goal is to create a pathway for African software developers to
+              transition into building for Bitcoin and Lightning.
+            </p>
+            <div className="w-[12.4rem] mt-12">
+              <Button href="https://qala.homerun.co/qala-application/apply">
+                Join Qala
+              </Button>
+            </div>
           </div>
         </div>
-        <InvertedContainer className=" before:bg-nav-white after:bg-nav-white dark:before:bg-dark-bg dark:after:bg-dark-bg">
-          <motion.div ref={carousel} className="w-full overflow-hidden">
+        <InvertedContainer className=" before:bg-nav-white after:bg-nav-white dark:before:bg-dark-bg dark:after:bg-dark-bg after:hidden lg:after:block before:hidden lg:before:block">
+          <motion.div
+            ref={carousel}
+            className="w-full overflow-hidden mt-8 lg:mt-0"
+          >
             <motion.div
               drag="x"
               dragConstraints={{ right: 0, left: -width }}
@@ -108,17 +115,27 @@ const Home: NextPage = () => {
           </motion.div>
         </InvertedContainer>
         <div className="flex flex-col mt-28">
-          <h3 className=" font-light text-2xl text-nav-blue text-center dark:text-primary-1">
+          <h3 className="font-light text-2xl text-nav-blue text-center dark:text-primary-1">
             Qala is proudly supported by
           </h3>
-          <div className="mt-10 flex dark:hidden mx-[6rem] justify-between flex-wrap">
+          <div className="mt-10 flex dark:hidden mx-4 lg:mx-[6rem] items-center justify-between flex-wrap">
             {SponsorLight.map((image, index) => (
-              <img alt="Sponsor" src={image} key={index} />
+              <img
+                alt="Sponsor"
+                src={image}
+                key={index}
+                className="mt-5 lg:mt-0"
+              />
             ))}
           </div>
-          <div className="mt-10 hidden dark:flex mx-[6rem] justify-between flex-wrap">
+          <div className="mt-10 hidden dark:flex mx-4 lg:mx-[6rem] items-center justify-between flex-wrap">
             {SponsorDark.map((image, index) => (
-              <img alt="Sponsor" src={image} key={index} />
+              <img
+                alt="Sponsor"
+                src={image}
+                key={index}
+                className="mt-5 lg:mt-0"
+              />
             ))}
           </div>
         </div>
@@ -141,10 +158,10 @@ const Home: NextPage = () => {
               </p>
             </div>
             <div className="w-[10.25rem] lg:w-[12.4rem] mt-8">
-              <Button>Learn More</Button>
+              <Button href="./about">Learn More</Button>
             </div>
           </div>
-          <div className="w-full h-[13.2rem] lg:w-[40rem] lg:h-[24.6rem]">
+          <div className="w-full h-[13.2rem] lg:w-[40rem] lg:h-[24.6rem] flex items-center justify-center">
             <img
               src="./video.png"
               alt="About Qala"
@@ -152,7 +169,7 @@ const Home: NextPage = () => {
             />
           </div>
         </div>
-        <InvertedContainer className="before:bg-nav-white after:bg-dark-grey dark:before:bg-dark-bg dark:after:bg-dark-blue">
+        <InvertedContainer className="before:bg-nav-white after:bg-dark-grey dark:before:bg-dark-bg dark:after:bg-dark-blue before:hidden lg:before:block after:hidden lg:after:block">
           <div className="bg-fellow dark:bg-dark-fellow  flex flex-col items-center py-16 lg:py-32">
             <div className="w-full lg:w-[40rem] flex flex-col items-center px-4 ">
               <SectionTitle className="text-center">
@@ -194,17 +211,19 @@ const Home: NextPage = () => {
                 className="lg:w-[20.4rem]"
               />
             </div>
-            <div className="lg:w-[12.4rem] mt-16">
-              <Button>Apply now</Button>
+            <div className="w-[10.2rem] lg:w-[12.4rem] mt-16 block">
+              <Button href="https://qala.homerun.co/qala-application/apply">
+                Apply now
+              </Button>
             </div>
-            <InvertedContainer className="before:bg-fellow after:bg-fellow before:dark:bg-dark-fellow after:dark:bg-dark-fellow ">
+            <InvertedContainer className="before:bg-fellow after:bg-fellow before:dark:bg-dark-fellow after:dark:bg-dark-fellow before:hidden lg:before:block after:hidden lg:after:block">
               <div className="flex flex-col lg:flex-row items-center justify-center bg-fellow dark:bg-dark-fellow">
                 <Window window="Application Window 1" month="April" />
                 <Window window="Application Window 2" month="June" />
                 <Window window="Application Window 3" month="November" />
               </div>
             </InvertedContainer>
-            <div>
+            <div className="mt-8 lg:mt-0">
               <p className="font-light text-base lg:text-2xl lg:w-[46.75rem] w-full text-nav-blue dark:text-primary-1 text-center px-2 mb-8">
                 All applications for Qala will be treated in 3 application
                 windows throughout the year. If you apply now, it will be
@@ -214,8 +233,8 @@ const Home: NextPage = () => {
             </div>
           </div>
         </InvertedContainer>
-        <div className="flex flex-col lg:flex-row items-center justify-center bg-dark-grey dark:bg-dark-blue pb-12">
-          <div className="flex dark:hidden items-center justify-center mr-8">
+        <div className="flex flex-col lg:flex-row items-center justify-center bg-dark-grey pt-8 lg:pt-0 dark:bg-dark-blue pb-12">
+          <div className="flex dark:hidden items-center justify-center lg:mr-8">
             <img src="./africa.svg" alt="Africa" />
           </div>
           <div className="hidden dark:flex items-center justify-center mr-8">
@@ -269,9 +288,9 @@ const Home: NextPage = () => {
             </div>
           </div>
         </div>
-        <InvertedContainer className="before:bg-dark-grey after:bg-nav-white dark:before:bg-dark-blue dark:after:bg-dark-bg ">
+        <InvertedContainer className="before:bg-dark-grey after:bg-nav-white dark:before:bg-dark-blue dark:after:bg-dark-bg after:hidden lg:after:block before:hidden lg:before:block ">
           <div className="pt-32 pb-32 flex items-center lg:pr-[10.95rem] lg:pl-0 px-4 flex-col lg:flex-row">
-            <div className="relative flex items-center justify-center lg:h-[28rem] lg:min-w-[40.75rem] rounded mr-5">
+            <div className=" min-w-full relative flex items-center justify-center lg:h-[28rem] lg:min-w-[40.75rem] rounded lg:mr-5">
               <img src="./gathering.png" alt="Qala Gathering" />
             </div>
             <div className=" ml-5">
@@ -307,18 +326,18 @@ const Home: NextPage = () => {
                 with love from Qala’s Bit.
               </P>
             </div>
-            <div className="lg:w-[12.4rem] mt-12 hidden lg:flex">
-              <Button>Go to blog page</Button>
+            <div className="lg:w-[12.4rem] mt-12 hidden lg:block">
+              <Button href="https://blog.qala.dev/">Go to blog page</Button>
             </div>
           </div>
           <Blog />
           <div className="lg:hidden flex justify-center">
             <div className="w-[10.25rem] mt-8">
-              <Button>Go to blog page</Button>
+              <Button href="https://blog.qala.dev/">Go to blog page</Button>
             </div>
           </div>
         </div>
-        <InvertedContainer className="before:bg-nav-white after:bg-nav-white dark:before:bg-dark-bg dark:after:bg-dark-bg ">
+        <InvertedContainer className="before:bg-nav-white after:bg-nav-white dark:before:bg-dark-bg dark:after:bg-dark-bg after:hidden lg:after:block before:hidden lg:before:block">
           <div className="bg-blue dark:bg-dark-fellow py-32 flex flex-col justify-center items-center lg:px-[10.95rem] px-4">
             <p className="text-white font-light font-Gilroy text-center text-xl lg:leading-[2.9rem] lg:text-[2.5rem] w-[16.1rem] lg:w-[40.25rem]">
               Check out our merchandise! You just might see something you like.
@@ -328,7 +347,7 @@ const Home: NextPage = () => {
             </div>
           </div>
         </InvertedContainer>
-        <div className="flex flex-col justify-center items-center px-4 mb-32">
+        <div className="flex flex-col justify-center items-center px-4 mb-32 mt-12 lg:mt-0">
           <div className="w-full lg:w-[40.25rem]">
             <p className="font-light text-Gilroy text-xl lg:text-[2.5rem] text-center text-nav-blue dark:text-primary-1">
               Know more about us

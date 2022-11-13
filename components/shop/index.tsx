@@ -27,10 +27,12 @@ export default function Shop() {
         ))}
       </div>
       <div className="flex items-center justify-center mt-16">
-        <button className="flex items-center justify-center bg-nav-white rounded w-[12.4rem] lg:w-[12.4rem] py-[1.125rem] text-nav-blue text-sm lg:text-lg">
-          Shop here{" "}
-          <img src="./arrow-right.svg" alt="Arrow Right" className="ml-2" />
-        </button>
+        <a href="https://merch.printivo.com/store/qala" target={"_blank"}>
+          <button className="flex items-center justify-center bg-nav-white rounded w-[12.4rem] lg:w-[12.4rem] py-[1.125rem] text-nav-blue text-sm lg:text-lg">
+            Shop here{" "}
+            <img src="./arrow-right.svg" alt="Arrow Right" className="ml-2" />
+          </button>
+        </a>
       </div>
     </div>
   );

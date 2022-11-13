@@ -6,7 +6,7 @@ interface Props {
 
 export default function Window({ window, month }: Props) {
   return (
-    <div className="h-[23rem] w-[16.4rem] lg:h-[24.9rem] lg:w-[22.1rem] flex flex-col justify-center items-center bg-blue lg:mx-4">
+    <div className="h-[18rem] w-[16.4rem] lg:h-[24.9rem] lg:w-[22.1rem] flex flex-col justify-center items-center bg-blue lg:mx-4 mt-8 lg:mt-0">
       <p className="text-center mb-2 w-[5.3rem] text-base lg:text-2xl font-light lg:w-[8rem] dark:text-dark text-dark-white">
         {window}
       </p>
