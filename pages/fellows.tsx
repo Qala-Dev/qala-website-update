@@ -38,11 +38,12 @@ export default function Fellows() {
           <div className="hidden lg:flex h-[2px] w-[14rem] bg-blue-main"></div>
         </div>
         <div className="flex justify-between flex-wrap">
-          {FellowsData.map((fellow) => (
+          {FellowsData.map((fellow, index) => (
             <FellowProfileCard
               name={fellow.name}
               image={fellow.image}
               role={fellow.role}
+              key={index}
             />
           ))}
         </div>
@@ -56,11 +57,12 @@ export default function Fellows() {
           <div className="hidden lg:flex h-[2px] w-[14rem] bg-blue-main"></div>
         </div>
         <div className="flex justify-between flex-wrap">
-          {FellowsData.map((fellow) => (
+          {FellowsData.map((fellow, index) => (
             <FellowProfileCard
               name={fellow.name}
               image={fellow.image}
               role={fellow.role}
+              key={index}
             />
           ))}
         </div>
@@ -74,11 +76,12 @@ export default function Fellows() {
           <div className="hidden lg:flex h-[2px] w-[14rem] bg-blue-main"></div>
         </div>
         <div className="flex justify-between flex-wrap">
-          {FellowsData.map((fellow) => (
+          {FellowsData.map((fellow, index) => (
             <FellowProfileCard
               name={fellow.name}
               image={fellow.image}
               role={fellow.role}
+              key={index}
             />
           ))}
         </div>

@@ -83,8 +83,8 @@ export default function FellowDetails({ fellowIndex, setCurrentPage }: Props) {
             </div>
           </div>
           <div className="flex flex-wrap mt-4">
-            {skills.map((skill) => (
-              <div className="mr-2 mt-3">
+            {skills.map((skill, index) => (
+              <div className="mr-2 mt-3" key={index}>
                 <Skill skill={skill} />
               </div>
             ))}
@@ -122,10 +122,11 @@ export default function FellowDetails({ fellowIndex, setCurrentPage }: Props) {
           <div className="mt-8">
             <SubTitle text="Notable projects" />
             <ul className="mt-4">
-              {Projects.map((project) => (
+              {Projects.map((project, index) => (
                 <li
                   className=" italic list-disc text-nav-blue dark:text-primary-1 font-semibold text-sm md:text-lg ml-6"
                   onClick={() => handleProjectLink(project.link)}
+                  key={index}
                 >
                   {project.name}
                 </li>

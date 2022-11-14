@@ -170,11 +170,12 @@ export default function Hire({ setCurrentPage }: Props) {
                 Select at least one skill
               </p>
               <div className="flex flex-wrap gap-x-10">
-                {Skills.map((skill) => (
+                {Skills.map((skill, index) => (
                   <Checkbox
                     label={skill.skill}
                     id={skill.id}
                     value={skill.value}
+                    key={index}
                   />
                 ))}
               </div>

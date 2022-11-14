@@ -107,22 +107,21 @@ export default function Nav() {
       </div>
       {isActive && (
         <div className="flex flex-col items-center w-full h-full mt-16">
-          <div className="flex flex-col items-center w-full">
+          <ul className="flex flex-col items-center w-full">
             {LINKS.map((link, index) => (
-              <ul className="">
-                <li
-                  className={`text-xl text-nav-blue dark:text-light-bg w-[10.2rem] text-center border-t border-grey-border dark:border-primary-9 py-4 ${
-                    index === LINKS.length - 1 ? "border-b" : ""
-                  }`}
-                  onClick={closeNav}
-                >
-                  <Link href={link.url} className="text-xl">
-                    <a>{link.title}</a>
-                  </Link>
-                </li>
-              </ul>
+              <li
+                className={`text-xl text-nav-blue dark:text-light-bg w-[10.2rem] text-center border-t border-grey-border dark:border-primary-9 py-4 ${
+                  index === LINKS.length - 1 ? "border-b" : ""
+                }`}
+                onClick={closeNav}
+                key={index}
+              >
+                <Link href={link.url} className="text-xl">
+                  <a>{link.title}</a>
+                </Link>
+              </li>
             ))}
-          </div>
+          </ul>
           <div className="flex items-center justify-center w-full mt-16">
             <div className="w-[10.25rem]">
               <Button>Join Qala</Button>{" "}
