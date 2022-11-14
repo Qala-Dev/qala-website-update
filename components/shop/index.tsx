@@ -16,7 +16,7 @@ const Items: Item[] = [
 export default function Shop() {
   return (
     <div className="w-full">
-      <div className="flex justify-between w-full flex-wrap">
+      <div className="flex justify-center gap-x-4 lg:gap-x-6 lg:justify-between w-full flex-wrap">
         {Items.map((item, index) => (
           <ShopItem
             name={item.name}

@@ -71,7 +71,7 @@ const Home: NextPage = () => {
             <H1 className="leading-[2.375rem] lg:leading-[4.76rem] ">
               Bitcoin for Africa, by Africans.
             </H1>
-            <p className="text-lg text-nav-blue text-center mt-6 w-full lg:w-[41.4rem] dark:text-primary-1">
+            <P className=" text-center mt-6 w-full lg:w-[41.4rem]">
               Qala is a program designed to{" "}
               <span className="font-bold">
                 train the next generation of African Bitcoin and Lightning
@@ -79,7 +79,7 @@ const Home: NextPage = () => {
               </span>{" "}
               Our goal is to create a pathway for African software developers to
               transition into building for Bitcoin and Lightning.
-            </p>
+            </P>
             <div className="w-[12.4rem] mt-12">
               <Button href="https://qala.homerun.co/qala-application/apply">
                 Join Qala
@@ -237,11 +237,13 @@ const Home: NextPage = () => {
           <div className="flex dark:hidden items-center justify-center lg:mr-8">
             <img src="./africa.svg" alt="Africa" />
           </div>
-          <div className="hidden dark:flex items-center justify-center mr-8">
+          <div className="hidden dark:flex items-center justify-center lg:mr-8">
             <img src="./africa-dark.svg" alt="Africa" />
           </div>
-          <div className="ml-8 mt-8 lg:mt-0 w-full lg:w-auto flex flex-col items-center">
-            <SectionTitle>Our Community</SectionTitle>
+          <div className="lg:ml-8 mt-8 lg:mt-0 w-full lg:w-auto flex flex-col items-center">
+            <SectionTitle className="mt-8 w-full text-center lg:text-left">
+              Our Community
+            </SectionTitle>
             <div className="flex justify-around lg:justify-between w-full lg:w-[22.375rem] mt-8 lg:mt-16">
               <div className="flex flex-col text-center lg:text-left">
                 <div className="flex flex-col items-center lg:items-start">
@@ -270,7 +272,7 @@ const Home: NextPage = () => {
                     Countries
                   </p>
                 </div>
-                <div className="flex flex-col">
+                <div className="flex flex-col mt-3 lg:mt-8">
                   <h3 className="text-[2.5rem] font-extrabold lg:text-[4rem] text-blue">
                     100+
                   </h3>
@@ -293,7 +295,7 @@ const Home: NextPage = () => {
             <div className=" min-w-full relative flex items-center justify-center lg:h-[28rem] lg:min-w-[40.75rem] rounded lg:mr-5">
               <img src="./gathering.png" alt="Qala Gathering" />
             </div>
-            <div className=" ml-5">
+            <div className=" lg:ml-5">
               <SectionTitle className="text-center lg:text-left mt-8 lg:mt-0">
                 Qala Gathering
               </SectionTitle>
