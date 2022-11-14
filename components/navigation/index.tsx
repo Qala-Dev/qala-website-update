@@ -18,8 +18,8 @@ const LINKS: Links[] = [
   { title: "Qala Fellows", url: "fellows" },
   { title: "Partner", url: "partner" },
   { title: "Hire", url: "hire" },
-  { title: "Blog", url: "blog" },
-  { title: "Shop", url: "shop" },
+  { title: "Blog", url: "https://blog.qala.dev/" },
+  { title: "Shop", url: "https://merch.printivo.com/store/qala" },
   { title: "About Us", url: "about" },
 ];
 export default function Nav() {
@@ -46,9 +46,13 @@ export default function Nav() {
       <div className="flex justify-between items-center px-4 lg:px-[10.95rem] pt-10 pb-4">
         <Link href={"/"} className="cursor-pointer">
           {theme === "light" ? (
-            <Image src={BigLogo} alt="Qala Logo" />
+            <Image src={BigLogo} alt="Qala Logo" className=" cursor-pointer" />
           ) : (
-            <Image src={BigDarkModeLogo} alt="Qala Logo" />
+            <Image
+              src={BigDarkModeLogo}
+              alt="Qala Logo"
+              className="cursor-pointer"
+            />
           )}
         </Link>
         <div className="items-center hidden lg:flex">
@@ -62,7 +66,7 @@ export default function Nav() {
                     : "text-nav-blue dark:text-nav-white font-normal"
                 } ml-6 text-base font-sans leading-[21.79px]`}
               >
-                <Link href={`/${link.url}`}>
+                <Link href={`${link.url}`}>
                   <a>{link.title}</a>
                 </Link>
               </li>
