@@ -1,4 +1,5 @@
 import Button from "~/components/resuable/button";
+import H1 from "~/components/resuable/H1";
 import Input from "~/components/resuable/input";
 import P from "~/components/resuable/paragraph";
 import TextArea from "~/components/resuable/textarea";
@@ -27,52 +28,36 @@ const SponsorDark: string[] = [
 export default function Partner() {
   return (
     <main>
-      <div className="relative h-[49.44rem] overflow-hidden">
+      <div className="w-full relative flex justify-center items-center flex-col">
         <img
-          src="./partner.png"
-          alt="Apply"
-          className="absolute inset-0 w-full object-cover"
+          src="./partners.png"
+          className="dark:hidden absolute w-screen inset-0 z-0"
         />
-        <div
-          className="absolute inset-0 dark:hidden"
-          style={{
-            background:
-              "linear-gradient(0deg, #F6F7FC 0%, rgba(255, 255, 255, 0) 59.23%)",
-          }}
-          background-blend-mod
-        ></div>
-        <div
-          className="hidden dark:flex absolute inset-0"
-          style={{
-            background: "rgba(6, 9, 22, 0.6)",
-            backgroundBlendMode: "hard-light",
-          }}
-        ></div>
-        <div
-          className="absolute inset-0 hidden dark:flex"
-          style={{
-            background:
-              "linear-gradient(0deg, #060916 0%, rgba(6, 9, 22, 0) 59.23%)",
-          }}
-        ></div>
-        <div className="relative flex flex-col items-center mt-[12.875rem] lg:mt-[23.7rem] px-4 lg:px-0">
-          <h1 className="lg:w-[56.9rem] text-center font-Gilroy leading-[95%] font-extrabold text-[2.2rem] lg:text-[5rem] text-nav-blue dark:text-nav-white">
+        <img
+          src="./dark_partner.png"
+          alt=""
+          className="hidden dark:flex absolute w-screen inset-0"
+        />
+        <div className="w-full lg:w-[48.43rem] lg:mt-[23.7rem] mt-[12.9rem] z-30 px-4 lg:px-0">
+          <H1 className="text-center leading-[2.375rem] lg:leading-[4.75rem]">
             Be a Qala Partner!
-          </h1>
-          <p className="text-nav-blue dark:text-nav-white lg:text-[2.5rem] text-xl font-Gilroy mt-4 font-light">
-            Hello Bitcoin Ecosystem Builder,
-          </p>
-          <P className="text-center lg:w-[48.4rem] mt-6 font-semibold">
-            We are always thrilled and delighted to collaborate with
-            organisations whose vision aligns with ours. At Qala, we are
-            dedicated to train and deliver valuable project-based learning to
-            African Bitcoin and Lightning Developers, which lays the groundwork
-            of a thriving and vibrant community of Bitcoin Developers on the
-            continent.
-          </P>
+          </H1>
+          <div className="flex flex-col mt-4 lg:mt-6 px-4 lg:px-0">
+            <p className="text-nav-blue dark:text-nav-white lg:text-[2.5rem] text-xl font-Gilroy font-light text-center">
+              Hello Bitcoin Ecosystem Builder,
+            </p>
+            <P className="text-center mt-4 lg:mt-6 font-semibold">
+              We are always thrilled and delighted to collaborate with
+              organisations whose vision aligns with ours. At Qala, we are
+              dedicated to train and deliver valuable project-based learning to
+              African Bitcoin and Lightning Developers, which lays the
+              groundwork of a thriving and vibrant community of Bitcoin
+              Developers on the continent.
+            </P>
+          </div>
         </div>
       </div>
-      <div className=" py-16 lg:py-[6.1rem] bg-dark-grey dark:bg-dark-blue flex items-center justify-center">
+      <div className="mt-10 lg:mt-36 py-16 lg:py-[6.1rem] bg-dark-grey dark:bg-dark-blue flex items-center justify-center">
         <p className="text-xl lg:text-[2rem] font-Gilroy text-nav-blue dark:text-primary-1 text-center lg:w-[54.125rem] leading-[1.875rem] lg:leading-[2.6rem] px-[2.5rem] lg:px-0">
           We are keen to connect with individuals and organisations interested
           in helping grow and expand the Bitcoin and Lightning Developer
