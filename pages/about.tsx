@@ -219,7 +219,7 @@ const About: NextPage = () => {
               grow a critical mass of African Bitcoin & Lightning developers
             </P>
           </div>
-          <div className="mt-4 lg:mt-8 flex gap-x-8 flex-wrap">
+          <div className="mt-4 lg:mt-8 flex gap-x-4 lg:gap-x-8  flex-wrap">
             <Team
               image="./femi.png"
               github=""
@@ -227,7 +227,7 @@ const About: NextPage = () => {
               name="Femi Longe"
             />
             <Team
-              image="./stephenie.png"
+              image="./stephanie.jpeg"
               github=""
               twitter="https://twitter.com"
               name="Stephanie Titcombe"

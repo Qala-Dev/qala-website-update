@@ -21,7 +21,11 @@ export default function Team({
     <div
       className={`flex flex-col w-[10.25rem] lg:w-[15.5rem] mb-10 ${className}`}
     >
-      <img src={image} alt={name} className="" />
+      <img
+        src={image}
+        alt={name}
+        className=" w-[10.25rem] lg:w-[15.5rem] h-[11.5rem] lg:h-[17.5rem]"
+      />
       <div className="flex flex-col mt-4 lg:mt-8">
         <p className=" text-sm lg:text-lg font-semibold text-nav-blue dark:text-primary-1">
           {name}
