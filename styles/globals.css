@@ -3,19 +3,18 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @font-face {
-  font-family: 'Gilroy';
+  font-family: "Gilroy";
   font-style: normal;
   font-weight: 300;
-  src: url('/fonts/Gilroy-Light.woff') format('woff');
+  src: url("/fonts/Gilroy-Light.woff") format("woff");
 }
 
 @font-face {
-  font-family: 'Gilroy';
+  font-family: "Gilroy";
   font-style: normal;
   font-weight: 800;
-  src: url('/fonts/Gilroy-Extrabold.woff') format('woff');
+  src: url("/fonts/Gilroy-Extrabold.woff") format("woff");
 }
 
 html,
@@ -27,6 +26,18 @@ body {
 body {
   /* max-width: 90rem; */
   margin: 0 auto;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body.no-scroll {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
 }
 
 a {

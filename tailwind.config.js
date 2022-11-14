@@ -40,7 +40,8 @@ module.exports = {
         "brown": "#231E1B",
         "fellow_hover":"#DDE5FF",
         "skill_blue": "#3A54A0",
-        "interview-blue":"#233260"
+        "interview-blue":"#233260",
+        "grey-border":"#E7ECFD"
       },
       fontFamily: {
         "Gilroy":['Gilroy'],
