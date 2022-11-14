@@ -29,12 +29,12 @@ const Apply: NextPage = () => {
             Kickstart Your Bitcoin Developer Career
           </H1>
           <div className="flex flex-col mt-4 lg:mt-6 px-4 lg:px-0">
-            <P className="text-center font-semibold">
+            <P className="text-center font-normal lg:font-semibold">
               At Qala, our goal is to create a pathway for African software
               developers to transition into building for Bitcoin. Our core
               programme is a{" "}
-              <span className=" font-extrabold">fully-funded</span> 13 week
-              experience where you get to immerse in building Bitcoin &
+              <span className=" font-bold lg:font-extrabold">fully-funded</span>{" "}
+              13 week experience where you get to immerse in building Bitcoin &
               lightning applications while being positioned for and matched into
               Bitcoin jobs around the world.
             </P>
