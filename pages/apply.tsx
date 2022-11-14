@@ -14,50 +14,35 @@ import TextArea from "~/components/resuable/textarea";
 const Apply: NextPage = () => {
   return (
     <main>
-      <div className="relative h-[49.44rem] overflow-hidden">
+      <div className="w-full relative flex justify-center items-center flex-col">
         <img
           src="./apply.png"
-          alt="Apply"
-          className="absolute inset-0 w-full object-cover"
+          className="dark:hidden absolute w-screen inset-0 z-0"
         />
-        <div
-          className="absolute inset-0 dark:hidden"
-          style={{
-            background:
-              "linear-gradient(0deg, #F6F7FC 0%, rgba(255, 255, 255, 0) 59.23%)",
-          }}
-          background-blend-mod
-        ></div>
-        <div
-          className="hidden dark:flex absolute inset-0"
-          style={{
-            background: "rgba(6, 9, 22, 0.6)",
-            backgroundBlendMode: "hard-light",
-          }}
-        ></div>
-        <div
-          className="absolute inset-0 hidden dark:flex"
-          style={{
-            background:
-              "linear-gradient(0deg, #060916 0%, rgba(6, 9, 22, 0) 59.23%)",
-          }}
-        ></div>
-        <div className="relative flex flex-col items-center mt-[12.875rem] lg:mt-[23.7rem] px-4 lg:px-0">
-          <h1 className="lg:w-[56.9rem] text-center font-Gilroy leading-[95%] font-extrabold text-[2.2rem] lg:text-[5rem] text-nav-blue dark:text-nav-white">
+        <img
+          src="./dark_apply.png"
+          alt=""
+          className="hidden dark:flex absolute w-screen inset-0"
+        />
+        <div className="w-full lg:w-[52.9rem] lg:mt-[23.7rem] mt-[12.9rem] z-30 px-4 lg:px-0">
+          <H1 className="text-center leading-[2.375rem] lg:leading-[4.75rem]">
             Kickstart Your Bitcoin Developer Career
-          </h1>
-          <P className="text-center lg:w-[48.4rem] mt-6 font-semibold">
-            At Qala, our goal is to create a pathway for African software
-            developers to transition into building for Bitcoin. Our core
-            programme is a <span className=" font-extrabold">fully-funded</span>{" "}
-            13 week experience where you get to immerse in building Bitcoin &
-            lightning applications while being positioned for and matched into
-            Bitcoin jobs around the world.
-          </P>
+          </H1>
+          <div className="flex flex-col mt-4 lg:mt-6 px-4 lg:px-0">
+            <P className="text-center font-semibold">
+              At Qala, our goal is to create a pathway for African software
+              developers to transition into building for Bitcoin. Our core
+              programme is a{" "}
+              <span className=" font-extrabold">fully-funded</span> 13 week
+              experience where you get to immerse in building Bitcoin &
+              lightning applications while being positioned for and matched into
+              Bitcoin jobs around the world.
+            </P>
+          </div>
         </div>
       </div>
       <div className="flex items-center w-full justify-center px-4 lg:px-0">
-        <div className="mt-64 w-full flex flex-col lg:w-[54.125rem] items-center justify-center">
+        <div className="mt-20 lg:mt-64 w-full flex flex-col lg:w-[54.125rem] items-center justify-center">
           <h2 className=" font-light text-xl lg:text-[2.5rem] text-center dark:text-nav-white font-Gilroy">
             To join the programme, you must
           </h2>
@@ -104,22 +89,22 @@ const Apply: NextPage = () => {
           What do you get from Qala?
         </SectionTitle>
         <div className="flex flex-col mt-4">
-          <InvertedContainer className="before:bg-nav-white after:bg-nav-white dark:before:bg-dark-bg dark:after:bg-dark-bg">
+          <InvertedContainer className="before:bg-nav-white after:bg-nav-white dark:before:bg-dark-bg dark:after:bg-dark-bg after:hidden lg:after:block before:hidden lg:before:block">
             <div className="flex flex-col lg:flex-row items-center justify-center">
               <Benefit
                 heading="Philosophy Immersion"
                 text="Deep immersion into Bitcoin development philosophy so you understand why Bitcoin is built the way it is"
-                className=" mr-3"
+                className=" lg:mr-3"
               />
               <Benefit
                 heading="Deep Learning"
                 text="Introduction to Bitcoin & Lightning development methodology - theoretically & practically"
-                className="mr-3"
+                className="lg:mr-3"
               />
               <Benefit
                 heading="Proof of work"
                 text="In form of concrete Bitcoin & Lightning projects that you build"
-                className="mr-3"
+                className="lg:mr-3"
               />
               <Benefit
                 heading="World-Class Faculty"
@@ -127,22 +112,22 @@ const Apply: NextPage = () => {
               />
             </div>
           </InvertedContainer>
-          <InvertedContainer className="before:bg-nav-white after:bg-nav-white dark:before:bg-dark-bg dark:after:bg-dark-bg">
+          <InvertedContainer className="before:bg-nav-white after:bg-nav-white dark:before:bg-dark-bg dark:after:bg-dark-bg after:hidden lg:after:block before:hidden lg:before:block">
             <div className="flex flex-col lg:flex-row items-center justify-center">
               <Benefit
                 heading="Monthly Stipend"
                 text="Over the 3 months of the programme so you can focus"
-                className=" mr-3"
+                className=" lg:mr-3"
               />
               <Benefit
                 heading="Technology Support"
                 text="Support to get your technology setup (internet, video & audio etc) up to muster for a global role"
-                className="mr-3"
+                className="lg:mr-3"
               />
               <Benefit
                 heading="Profile Building"
                 text="Build your persona and profile in the extended Bitcoin developer ecosystem"
-                className="mr-3"
+                className="lg:mr-3"
               />
               <Benefit
                 heading="Employer Matching"
@@ -150,12 +135,12 @@ const Apply: NextPage = () => {
               />
             </div>
           </InvertedContainer>
-          <InvertedContainer className="before:bg-nav-white after:bg-nav-white dark:before:bg-dark-bg dark:after:bg-dark-bg">
+          <InvertedContainer className="before:bg-nav-white after:bg-nav-white dark:before:bg-dark-bg dark:after:bg-dark-bg after:hidden lg:after:block before:hidden lg:before:block">
             <div className="flex flex-col lg:flex-row items-center justify-center">
               <Benefit
                 heading="Mentorship"
                 text="Experienced mentors that support your journey through weekly one-on-one"
-                className=" mr-3"
+                className=" lg:mr-3"
               />
               <Benefit
                 heading="Philosophy Immersion"
@@ -165,7 +150,7 @@ const Apply: NextPage = () => {
           </InvertedContainer>
         </div>
       </div>
-      <div className="flex flex-col w-full">
+      <div className="flex flex-col w-full mt-12 lg:mt-0">
         <div className="w-screen relative">
           <img
             src="./steps.png"
