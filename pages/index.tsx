@@ -416,9 +416,11 @@ const Home: NextPage = () => {
                 <div className=" mt-8 lg:mt-12">
                   <Button>Subscribe</Button>
                 </div>
-                <p className=" font-bold italic text-sm lg:text-lg text-blue-main cursor-pointer text-center mt-4">
-                  Go to Qala Newsletter
-                </p>
+                <a href=" https://mailchi.mp/93359e2eb0bf/stay-in-touch">
+                  <p className=" font-bold italic text-sm lg:text-lg text-blue-main cursor-pointer text-center mt-4">
+                    Go to Qala Newsletter
+                  </p>
+                </a>
               </div>
             </div>
           </div>
