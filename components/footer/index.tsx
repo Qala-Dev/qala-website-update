@@ -9,11 +9,11 @@ export default function Footer() {
       <div className=" h-1 w-24 bg-nav-blue rounded dark:bg-nav-white"></div>
       <div className="flex flex-col items-center justify-center mt-8">
         <div className="flex">
-          <a href="">
+          {/* <a href="">
             <div className=" h-8 w-8 rounded-[5px] flex items-center justify-center bg-facebook-blue mx-2">
               <Image src={Facebook} alt="Facebook" />
             </div>
-          </a>
+          </a> */}
           <a href="https://twitter.com/QalaAfrica">
             <div className=" h-8 w-8 rounded-[5px] flex items-center justify-center bg-twitter-blue mx-2">
               <Image src={Twitter} alt="Twitter" />

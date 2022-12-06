@@ -358,7 +358,7 @@ const Home: NextPage = () => {
             </p>
             <div className="flex flex-col lg:flex-row items-center justify-center mt-4 lg:mt-8">
               <div className="flex">
-                <a>
+                {/* <a>
                   <div className="flex items-center justify-center h-[2.7rem] w-[2.7rem] lg:h-[4rem] lg:w-[4rem] bg-facebook-blue rounded-[5px] mx-2">
                     <img
                       src="./facebook.svg"
@@ -366,7 +366,7 @@ const Home: NextPage = () => {
                       className="w-[1.3rem] h-[1.3rem] lg:w-[2rem] lg:h-[2rem]"
                     />
                   </div>
-                </a>
+                </a> */}
                 <a href="https://twitter.com/QalaAfrica">
                   <div className="flex items-center justify-center h-[2.7rem] w-[2.7rem] lg:h-[4rem] lg:w-[4rem] bg-twitter-blue rounded-[5px] mx-2">
                     <img
