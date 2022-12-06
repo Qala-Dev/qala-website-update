@@ -361,27 +361,31 @@ const About: NextPage = () => {
               Reach out to us on social media
             </p>
             <div className="flex items-center justify-center mt-4 lg:mt-8">
-              <div className="flex items-center justify-center h-[2.7rem] w-[2.7rem] lg:h-[4rem] lg:w-[4rem] bg-facebook-blue rounded-[5px] mx-2">
+              {/* <div className="flex items-center justify-center h-[2.7rem] w-[2.7rem] lg:h-[4rem] lg:w-[4rem] bg-facebook-blue rounded-[5px] mx-2">
                 <img
                   src="./facebook.svg"
                   alt="Facebook"
                   className="w-[1.3rem] h-[1.3rem] lg:w-[2rem] lg:h-[2rem]"
                 />
-              </div>
-              <div className="flex items-center justify-center h-[2.7rem] w-[2.7rem] lg:h-[4rem] lg:w-[4rem] bg-twitter-blue rounded-[5px] mx-2">
-                <img
-                  src="./twitter.svg"
-                  alt="Twitter"
-                  className="w-[1.3rem] h-[1.3rem] lg:w-[2rem] lg:h-[2rem]"
-                />
-              </div>
-              <div className="flex items-center justify-center h-[2.7rem] w-[2.7rem] lg:h-[4rem] lg:w-[4rem] bg-linkedin-blue rounded-[5px] mx-2">
-                <img
-                  src="./linkedin.svg"
-                  alt="Facebook"
-                  className="w-[1.3rem] h-[1.3rem] lg:w-[2rem] lg:h-[2rem]"
-                />
-              </div>
+              </div> */}
+              <a href="https://twitter.com/QalaAfrica">
+                <div className="flex items-center justify-center h-[2.7rem] w-[2.7rem] lg:h-[4rem] lg:w-[4rem] bg-twitter-blue rounded-[5px] mx-2">
+                  <img
+                    src="./twitter.svg"
+                    alt="Twitter"
+                    className="w-[1.3rem] h-[1.3rem] lg:w-[2rem] lg:h-[2rem]"
+                  />
+                </div>
+              </a>
+              <a href="https://www.linkedin.com/company/qala-africa/">
+                <div className="flex items-center justify-center h-[2.7rem] w-[2.7rem] lg:h-[4rem] lg:w-[4rem] bg-linkedin-blue rounded-[5px] mx-2">
+                  <img
+                    src="./linkedin.svg"
+                    alt="LinkedIn"
+                    className="w-[1.3rem] h-[1.3rem] lg:w-[2rem] lg:h-[2rem]"
+                  />
+                </div>
+              </a>
             </div>
           </div>
           <div className="flex flex-col mt-12 lg:mt-32 w-full items-center">
