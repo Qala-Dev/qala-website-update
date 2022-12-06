@@ -287,7 +287,7 @@ const Home: NextPage = () => {
 
             <div className="w-full flex items-center justify-center lg:justify-start">
               <div className="w-[10.2rem] lg:w-[10.9rem] mt-12">
-                <Button>Meet the people</Button>
+                <Button href="./fellows">Meet the people</Button>
               </div>
             </div>
           </div>
