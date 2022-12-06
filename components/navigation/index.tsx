@@ -39,8 +39,8 @@ export default function Nav() {
 
   return (
     <div
-      className={` bg-light-bg/[.7] dark:bg-dark-bg/[.85] ${
-        isActive ? "h-screen" : "h-auto"
+      className={` bg-light-bg/[.7] dark:bg-dark-bg/[.85] top-0 backdrop-blur z-30 ${
+        isActive ? "h-screen" : "h-auto sticky"
       }`}
     >
       <div className="flex justify-between items-center px-4 lg:px-[10.95rem] pt-10 pb-4">
