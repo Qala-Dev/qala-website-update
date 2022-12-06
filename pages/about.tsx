@@ -87,7 +87,15 @@ const About: NextPage = () => {
         </div>
       </div>
       <div className="lg:px-[10.9rem] px-4 flex items-center justify-center mt-20 lg:mt-48 flex-col">
-        <img src="./video_lg.png" />
+        <div className="h-[21.44rem] lg:h-[34.1rem] w-full">
+          <iframe
+            width="100%"
+            height="100%"
+            src="https://www.youtube.com/embed/oOLjeRwaPn0"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          ></iframe>
+        </div>
         <div className="flex flex-col mt-8 lg:mt-16 w-full lg:w-[40.2rem]">
           <SectionTitle className="text-center">
             The Journey So Far{" "}

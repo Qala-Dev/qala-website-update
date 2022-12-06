@@ -16,7 +16,7 @@ export default function Press({
 }: Props) {
   return (
     <div
-      className={`${className} px-[0.875rem] py-[1.125rem] lg:px-[1.125rem] lg:py-[1.125rem] w-full lg:w-[21.9rem] bg-dark-grey rounded-lg`}
+      className={`${className} px-[0.875rem] py-[1.125rem] lg:px-[1.125rem] lg:py-[1.125rem] w-full lg:w-[21.9rem] bg-dark-grey rounded-lg mb-4`}
     >
       <div className="flex justify-between items-center">
         <p className="text-nav-blue text-xs lg:text-base">by {author}</p>
