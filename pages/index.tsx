@@ -358,30 +358,36 @@ const Home: NextPage = () => {
             </p>
             <div className="flex flex-col lg:flex-row items-center justify-center mt-4 lg:mt-8">
               <div className="flex">
-                <div className="flex items-center justify-center h-[2.7rem] w-[2.7rem] lg:h-[4rem] lg:w-[4rem] bg-facebook-blue rounded-[5px] mx-2">
-                  <img
-                    src="./facebook.svg"
-                    alt="Facebook"
-                    className="w-[1.3rem] h-[1.3rem] lg:w-[2rem] lg:h-[2rem]"
-                  />
-                </div>
-                <div className="flex items-center justify-center h-[2.7rem] w-[2.7rem] lg:h-[4rem] lg:w-[4rem] bg-twitter-blue rounded-[5px] mx-2">
-                  <img
-                    src="./twitter.svg"
-                    alt="Twitter"
-                    className="w-[1.3rem] h-[1.3rem] lg:w-[2rem] lg:h-[2rem]"
-                  />
-                </div>
-                <div className="flex items-center justify-center h-[2.7rem] w-[2.7rem] lg:h-[4rem] lg:w-[4rem] bg-linkedin-blue rounded-[5px] mx-2">
-                  <img
-                    src="./linkedin.svg"
-                    alt="Facebook"
-                    className="w-[1.3rem] h-[1.3rem] lg:w-[2rem] lg:h-[2rem]"
-                  />
-                </div>
+                <a>
+                  <div className="flex items-center justify-center h-[2.7rem] w-[2.7rem] lg:h-[4rem] lg:w-[4rem] bg-facebook-blue rounded-[5px] mx-2">
+                    <img
+                      src="./facebook.svg"
+                      alt="Facebook"
+                      className="w-[1.3rem] h-[1.3rem] lg:w-[2rem] lg:h-[2rem]"
+                    />
+                  </div>
+                </a>
+                <a href="https://twitter.com/QalaAfrica">
+                  <div className="flex items-center justify-center h-[2.7rem] w-[2.7rem] lg:h-[4rem] lg:w-[4rem] bg-twitter-blue rounded-[5px] mx-2">
+                    <img
+                      src="./twitter.svg"
+                      alt="Twitter"
+                      className="w-[1.3rem] h-[1.3rem] lg:w-[2rem] lg:h-[2rem]"
+                    />
+                  </div>
+                </a>
+                <a href="https://www.linkedin.com/company/qala-africa/">
+                  <div className="flex items-center justify-center h-[2.7rem] w-[2.7rem] lg:h-[4rem] lg:w-[4rem] bg-linkedin-blue rounded-[5px] mx-2">
+                    <img
+                      src="./linkedin.svg"
+                      alt="Facebook"
+                      className="w-[1.3rem] h-[1.3rem] lg:w-[2rem] lg:h-[2rem]"
+                    />
+                  </div>
+                </a>
               </div>
               <div className="w-[10.2rem] lg:w-[8.375rem] lg:ml-4 mt-6 lg:mt-0">
-                <Button>Learn more</Button>
+                <Button href="./about">Learn more</Button>
               </div>
             </div>
             <div className=" mt-16 lg:mt-32">
