@@ -50,7 +50,7 @@ export default function Fellows() {
           ))}
         </div>
       </div>
-      <div className="py-16 lg:py-32 items-center w-full flex flex-col lg:px-[10.94rem] px-4">
+      {/* <div className="py-16 lg:py-32 items-center w-full flex flex-col lg:px-[10.94rem] px-4">
         <div className="flex flex-row items-center justify-center lg:justify-between w-full">
           <div className="hidden lg:flex h-[2px] w-[14rem] bg-blue-main"></div>
           <SectionTitle className="text-center">
@@ -68,8 +68,8 @@ export default function Fellows() {
             />
           ))}
         </div>
-      </div>
-      <div className="py-16 lg:py-32 bg-fellow dark:bg-dark-fellow items-center w-full flex flex-col lg:px-[10.94rem] px-4">
+      </div> */}
+      {/* <div className="py-16 lg:py-32 bg-fellow dark:bg-dark-fellow items-center w-full flex flex-col lg:px-[10.94rem] px-4">
         <div className="flex flex-row items-center justify-center lg:justify-between w-full">
           <div className="hidden lg:flex h-[2px] w-[14rem] bg-blue-main"></div>
           <SectionTitle className="text-center">
@@ -87,7 +87,7 @@ export default function Fellows() {
             />
           ))}
         </div>
-      </div>
+      </div> */}
     </main>
   );
 }
