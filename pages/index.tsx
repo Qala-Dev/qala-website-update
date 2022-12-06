@@ -162,11 +162,13 @@ const Home: NextPage = () => {
             </div>
           </div>
           <div className="w-full h-[13.2rem] lg:w-[40rem] lg:h-[24.6rem] flex items-center justify-center">
-            <img
-              src="./video.png"
-              alt="About Qala"
-              className="max-w-full max-h-full"
-            />
+            <iframe
+              width="100%"
+              height="100%"
+              src="https://www.youtube.com/embed/iQHhqxIKs4M"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            ></iframe>
           </div>
         </div>
         <InvertedContainer className="before:bg-nav-white after:bg-dark-grey dark:before:bg-dark-bg dark:after:bg-dark-blue before:hidden lg:before:block after:hidden lg:after:block">
