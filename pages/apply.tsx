@@ -79,7 +79,9 @@ const Apply: NextPage = () => {
           </div>
           <div className="flex items-center justify-center mt-8 lg:mt-16">
             <div className="w-[10.3rem] lg:w-[12.375rem]">
-              <Button>Apply Here</Button>
+              <Button href="https://qala.homerun.co/qala-application/apply">
+                Apply Here
+              </Button>
             </div>
           </div>
         </div>

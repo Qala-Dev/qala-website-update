@@ -23,7 +23,9 @@ export default function Fellows() {
             </p>
             <div className="w-full flex items-center justify-center mt-6 lg:mt-12">
               <div className="w-[10.25rem] lg:w-[12.4rem]">
-                <Button>Apply here</Button>
+                <Button href="https://qala.homerun.co/qala-application/apply">
+                  Apply here
+                </Button>
               </div>
             </div>
           </div>
