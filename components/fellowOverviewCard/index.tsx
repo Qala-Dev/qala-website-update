@@ -14,6 +14,7 @@ export default function FellowOverviewCard({
   skills,
   className,
 }: Props) {
+  const updatedSkill = skills.length <= 3 ? skills : skills.slice(0, 3);
   return (
     <div
       className={`flex flex-col w-full md:w-[21.7rem] cursor-pointer rounded p-6 dark:bg-dark-fellow bg-dark-grey hover:bg-fellow_hover dark:hover:bg-primary-9 ${className}`}
@@ -33,11 +34,13 @@ export default function FellowOverviewCard({
           </p>
         </div>
       </div>
-      <p className="text-sm md:text-base dark:text-h1-grey text-nav-blue my-6">
-        {description}
+      <p className="text-sm md:text-base dark:text-h1-grey text-nav-blue my-6 min-h-[6rem]">
+        {description.length < 140
+          ? description
+          : `${description.substring(0, 140)}...`}
       </p>
       <div className="flex justify-between items-center">
-        {skills.map((skill, index) => (
+        {updatedSkill.map((skill, index) => (
           <div
             className="border border-nav-blue rounded px-[1.125rem] py-[0.34rem] dark:border-light-bg"
             key={index}

@@ -9,6 +9,7 @@ import RadioButton from "~/components/resuable/radioButton";
 
 interface Props {
   setCurrentPage: (page: number) => void;
+  setFellowIndex: (index: number) => void;
 }
 
 const fellowData = [
@@ -16,16 +17,22 @@ const fellowData = [
     image: "./fellows/omoniyi.png",
     name: "Omoniyi Ilesanmi",
     role: "Fullstack Developer",
+    background:
+      "Full stack Java/Spring Boot developer with PHP, python, typescript and React JS exposure. Built his own educational blockchain project from scratch.",
   },
   {
     image: "./fellows/collins.png",
     name: "Collin Rukundo",
     role: "Fullstack Developer",
+    background:
+      "Experienced civic technologist with a Bachelor’s degree in Computer Science specialising in Python, the Django Web Framework and Wagtail CMS. Through his company Matchstick Studio, he’s built tools that make soft skilling easier, track data coming out of parliament of Uganda, and contextualise available data on various districts. He wants to work in Bitcoin for social good including addressing police violence and LGBT rights.",
   },
   {
     image: "./fellows/enie.png",
     name: "Enigbe Ochekliye",
     role: "Fullstack Developer",
+    background:
+      "Trained as a mechanical engineer and CAD designer, Eni has since transitioned into software development. Solid knowledge of Python and Flask she has exposure to Javascript/Typescript, NodeJS, some Golang, and is currently focusing on learning Rust. She quit her job to focus full time on studying Bitcoin in January.",
   },
 ];
 
@@ -79,7 +86,11 @@ const Skills = [
   { skill: "Data Engineer", id: "data_engineer", value: "Data Engineer" },
 ];
 
-export default function Hire({ setCurrentPage }: Props) {
+export default function Hire({ setCurrentPage, setFellowIndex }: Props) {
+  const selectFellowHandler = (index: number) => {
+    setFellowIndex(index);
+    setCurrentPage(3);
+  };
   return (
     <main>
       <div className="flex flex-col items-center">
@@ -123,15 +134,16 @@ export default function Hire({ setCurrentPage }: Props) {
         </div>
         <div className="flex flex-col mt-12 lg:mt-0">
           {fellowData.map((fellow, index) => (
-            <FellowOverviewCard
-              key={index}
-              image={fellow.image}
-              description="Raphael is a fullstack engineer with 4 years of javaScript, ReactNative, and Scala. Along with being an experienced dev., Raphael loves to build and write."
-              role="Bitcoin Developer"
-              skills={["JavaScript", "ReactNative", "Scala"]}
-              name={fellow.name}
-              className={`${index != 0 ? "mt-6" : ""}`}
-            />
+            <div onClick={() => selectFellowHandler(index)} key={index}>
+              <FellowOverviewCard
+                image={fellow.image}
+                description={fellow.background}
+                role="Bitcoin Developer"
+                skills={["JavaScript", "ReactNative", "Scala"]}
+                name={fellow.name}
+                className={`${index != 0 ? "mt-6" : ""}`}
+              />
+            </div>
           ))}
         </div>
         <div className="flex items-center justify-center lg:hidden">

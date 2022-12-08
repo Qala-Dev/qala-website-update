@@ -5,6 +5,14 @@ interface Props {
   setFellowIndex: (index: number) => void;
 }
 
+interface fellow {
+  skills: string[];
+  name: string;
+  role: string;
+  image: string;
+  background: string;
+}
+
 export default function Fellows({ setCurrentPage, setFellowIndex }: Props) {
   const selectFellowHandler = (index: number) => {
     setFellowIndex(index);
@@ -13,7 +21,7 @@ export default function Fellows({ setCurrentPage, setFellowIndex }: Props) {
   return (
     <main>
       <div
-        className="flex items-center px-4 lg:px-[10.9rem] mt-10 lg:mt-16"
+        className="flex items-center px-4 lg:px-[10.9rem] mt-10 lg:mt-16 cursor-pointer"
         onClick={() => setCurrentPage(1)}
       >
         <img src="./back_icon.svg" alt="Back" className="mr-2" />
@@ -33,10 +41,8 @@ export default function Fellows({ setCurrentPage, setFellowIndex }: Props) {
               name={fellow.name}
               image={fellow.image}
               role={fellow.role}
-              description={
-                "Raphael is a fullstack engineer with 4 years of javaScript, ReactNative, and Scala. Along with being an experienced dev., Raphael loves to build and write."
-              }
-              skills={["JavaScript", "Scala", "ReactNative"]}
+              description={fellow.background}
+              skills={fellow.skills}
               className={`lg:mt-16 mt-6`}
             />
           </div>

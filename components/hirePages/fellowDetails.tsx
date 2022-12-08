@@ -49,7 +49,7 @@ export default function FellowDetails({ fellowIndex, setCurrentPage }: Props) {
   return (
     <main className="px-4 lg:px-[10.9rem]">
       <div
-        className="flex items-center mt-10 lg:mt-16"
+        className="flex items-center mt-10 lg:mt-16 cursor-pointer"
         onClick={() => setCurrentPage(2)}
       >
         <img src="./back_icon.svg" alt="Back" className="mr-2" />
@@ -70,16 +70,16 @@ export default function FellowDetails({ fellowIndex, setCurrentPage }: Props) {
           </div>
           <div className="flex mt-4">
             <div className="mr-2">
-              <Github link="" />
+              <Github link={fellowDetail.github} />
             </div>
             <div className="mr-2">
-              <Meduim />
+              <Meduim link={fellowDetail.medium} />
             </div>
             <div className="mr-2">
-              <LinkedIn link="https://linkedin.com" />
+              <LinkedIn link={fellowDetail.linkedin} />
             </div>
             <div>
-              <Twitter link="https://twitter.com" />
+              <Twitter link={fellowDetail.twitter} />
             </div>
           </div>
           <div className="flex flex-wrap mt-4">
@@ -93,42 +93,29 @@ export default function FellowDetails({ fellowIndex, setCurrentPage }: Props) {
         <div className="w-full lg:w-[40.25rem]">
           <div className="mt-8 md:mt-0">
             <SubTitle text="Technical background" />
-            <Paragraph className="mt-4">
-              Raphael is a fullstack engineer with 4 years of javaScript,
-              ReactNative, and Scala. Along with being an experienced dev.,
-              Raphael loves to build and write.
-            </Paragraph>
+            <Paragraph className="mt-4">{fellowDetail.background}</Paragraph>
           </div>
           <div className="mt-8">
             <SubTitle text="Why is Bitcoin important to you?" />
-            <Paragraph className="mt-4">
-              Bitcoin to me means new possibilities and new opportunities. I
-              want to be one of the pioneers in Africa’s Bitcoin space, and
-              maybe the world at large
-            </Paragraph>
+            <Paragraph className="mt-4">{fellowDetail.why_bitcoin}</Paragraph>
           </div>
           <div className="mt-8">
             <SubTitle text="What has been the best part about learning at Qala?" />
             <Paragraph className="mt-4">
-              The Qala program has been an amazing experience, the best part for
-              me is the confidence that comes with knowledge. The last 8 months
-              for me have been an amazing Bitcoin learning journey, from Qala
-              study groups to the Bitcoin seminarm and then the main Qala
-              program. I have been able to build four (4) Bitcoin/Lightning
-              projects during the course of the program, and i have also been
-              able to learn a lot about Bitcoin and Lightning network.
+              {fellowDetail.learning_at_qala}
             </Paragraph>
           </div>
           <div className="mt-8">
             <SubTitle text="Notable projects" />
             <ul className="mt-4">
-              {Projects.map((project, index) => (
+              {fellowDetail.projects.map((project, index) => (
                 <li
                   className=" italic list-disc text-nav-blue dark:text-primary-1 font-semibold text-sm md:text-lg ml-6"
-                  onClick={() => handleProjectLink(project.link)}
                   key={index}
                 >
-                  {project.name}
+                  <a href={project.link} className=" underline">
+                    {project.name}
+                  </a>
                 </li>
               ))}
             </ul>

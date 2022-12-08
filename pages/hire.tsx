@@ -8,7 +8,9 @@ export default function HirePage() {
   const [fellowIndex, setFellowIndex] = useState<number>(1);
   return (
     <>
-      {currentPage === 1 && <Hire setCurrentPage={setCurrentPage} />}
+      {currentPage === 1 && (
+        <Hire setCurrentPage={setCurrentPage} setFellowIndex={setFellowIndex} />
+      )}
       {currentPage === 2 && (
         <Fellows
           setCurrentPage={setCurrentPage}

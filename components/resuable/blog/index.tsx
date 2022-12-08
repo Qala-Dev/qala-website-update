@@ -11,7 +11,7 @@ export default function FellowBlog({
   description,
 }: Props) {
   return (
-    <div className="w-full flex flex-col p-[1.125rem] lg:p-4 rounded-lg  bg-dark-grey dark:bg-dark-fellow mt-4 cursor-pointer">
+    <div className="w-full flex flex-col p-[1.125rem] lg:p-4 rounded-lg  bg-dark-grey dark:bg-dark-fellow mt-4 cursor-pointer hover:bg-fellow_hover dark:hover:bg-primary-9">
       <div className="flex justify-between text-nav-blue lg:text-base text-xs dark:text-light-blue">
         <p className="">
           By <span className=" underline">{author}</span>
