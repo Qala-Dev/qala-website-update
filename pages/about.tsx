@@ -146,22 +146,22 @@ const About: NextPage = () => {
           <div className="mt-4 lg:mt-8 flex justify-between flex-wrap">
             <Team
               image="./abubakar.png"
-              github=""
-              twitter="https://twitter.com"
+              github="https://github.com/Zero-1729"
+              twitter="https://twitter.com/ihate1999"
               description="CEO of Recursive Capital, Bitcoin Core Contributor & Board Member at Btrust"
               name="Abubakar Nur Khalil"
             />
             <Team
               image="./carla.png"
-              github=""
-              twitter="https://twitter.com"
+              github="https://github.com/carlaKC"
+              twitter="https://twitter.com/actuallyCarlaKC"
               description="Lightning Developer & Board Member at Btrust"
               name="Carla Kirk-Cohen"
             />
             <Team
               image="./bernard.png"
               github=""
-              twitter="https://twitter.com"
+              twitter="https://twitter.com/bernard_parah"
               description="CEO of Bitnob, building financial services on Bitcoin and the lightning network"
               name="Bernard Parah"
             />
@@ -188,31 +188,31 @@ const About: NextPage = () => {
             <Team
               image="./jonas.png"
               github=""
-              twitter="https://twitter.com"
+              twitter="https://twitter.com/adamcjonas"
               name="Adam Jonas"
             />
             <Team
               image="./carly.png"
               github=""
-              twitter="https://twitter.com"
+              twitter="https://twitter.com/Caralie_C"
               name="Caralie Chrisco"
             />
             <Team
               image="./empty.png"
               github=""
-              twitter="https://twitter.com"
+              twitter="https://twitter.com/willcl_ark"
               name="Will Clark"
             />
             <Team
               image="./empty.png"
-              github=""
-              twitter="https://twitter.com"
+              github="https://github.com/stickies-v"
+              twitter="https://twitter.com/stphnvlstk"
               name="Stephan Vuylsteke"
             />
             <Team
               image="./empty.png"
               github=""
-              twitter="https://twitter.com"
+              twitter="https://twitter.com/dunxen"
               name="Duncan Dean"
             />
           </div>
@@ -231,7 +231,7 @@ const About: NextPage = () => {
             <Team
               image="./femi.png"
               github=""
-              twitter="https://twitter.com"
+              twitter="https://twitter.com/femilonge"
               name="Femi Longe"
             />
             <Team
