@@ -39,7 +39,7 @@ export default function Nav() {
 
   return (
     <div
-      className={` bg-light-bg/[.7] dark:bg-dark-bg/[.85] top-0 backdrop-blur z-30 ${
+      className={` bg-light-bg/[.7] dark:bg-dark-bg/[.85] top-0 backdrop-blur z-50 ${
         isActive ? "h-screen" : "h-auto sticky"
       }`}
     >
