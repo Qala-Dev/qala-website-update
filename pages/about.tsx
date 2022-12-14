@@ -121,8 +121,8 @@ const About: NextPage = () => {
               {" "}
               The new Qala cohort will follow the significant momentum of the
               first Qala cohort’s immersive bitcoin experience. Qala is
-              currently accepting applications for the next cohort, beginning Q4
-              2022. All skilled African software developers are encouraged to
+              currently accepting applications for the next cohort, beginning Q1
+              2023. All skilled African software developers are encouraged to
               apply now and stay up to date with the latest information on the
               application process via the Qala Newsletter.
             </P>
