@@ -46,6 +46,8 @@ export default function Fellows() {
               image={fellow.image}
               role={fellow.role}
               key={index}
+              github={fellow.github}
+              meduim={fellow.medium}
             />
           ))}
         </div>
