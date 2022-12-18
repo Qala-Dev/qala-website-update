@@ -6,11 +6,7 @@ import HireStep from "~/components/hireStep";
 import Input from "~/components/resuable/input";
 import Checkbox from "~/components/resuable/checkbox";
 import RadioButton from "~/components/resuable/radioButton";
-
-interface Props {
-  setCurrentPage: (page: number) => void;
-  setFellowIndex: (index: number) => void;
-}
+import { useRouter } from "next/router";
 
 const fellowData = [
   {
@@ -86,11 +82,8 @@ const Skills = [
   { skill: "Data Engineer", id: "data_engineer", value: "Data Engineer" },
 ];
 
-export default function Hire({ setCurrentPage, setFellowIndex }: Props) {
-  const selectFellowHandler = (index: number) => {
-    setFellowIndex(index);
-    setCurrentPage(3);
-  };
+export default function Hire() {
+  const router = useRouter();
   return (
     <main>
       <div className="flex flex-col items-center">
@@ -127,14 +120,17 @@ export default function Hire({ setCurrentPage, setFellowIndex }: Props) {
           </div>
           <div
             className="hidden lg:flex w-[12.375rem] mt-12"
-            onClick={() => setCurrentPage(2)}
+            onClick={() => router.push("./hire/fellows")}
           >
             <Button>View all profiles</Button>
           </div>
         </div>
         <div className="flex flex-col mt-12 lg:mt-0">
           {fellowData.map((fellow, index) => (
-            <div onClick={() => selectFellowHandler(index)} key={index}>
+            <div
+              key={index}
+              onClick={() => router.push(`./hire/fellows/${index}`)}
+            >
               <FellowOverviewCard
                 image={fellow.image}
                 description={fellow.background}
@@ -147,7 +143,10 @@ export default function Hire({ setCurrentPage, setFellowIndex }: Props) {
           ))}
         </div>
         <div className="flex items-center justify-center lg:hidden">
-          <div className=" w-[10.25rem] mt-8" onClick={() => setCurrentPage(2)}>
+          <div
+            className=" w-[10.25rem] mt-8"
+            onClick={() => router.push("./hire/fellows")}
+          >
             <Button>View all profiles</Button>
           </div>
         </div>

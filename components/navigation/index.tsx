@@ -46,7 +46,7 @@ export default function Nav() {
       <div className="flex justify-between items-center px-4 lg:px-[10.95rem] pt-10 pb-4">
         <Link href={"/"} className="cursor-pointer">
           {theme === "light" ? (
-            <Image src={BigLogo} alt="Qala Logo" className=" cursor-pointer" />
+            <Image src={BigLogo} alt="Qala Logo" className="cursor-pointer" />
           ) : (
             <Image
               src={BigDarkModeLogo}
@@ -66,7 +66,9 @@ export default function Nav() {
                     : "text-nav-blue dark:text-nav-white font-normal"
                 } ml-6 text-base font-sans leading-[21.79px]`}
               >
-                <Link href={`${link.url}`}>
+                <Link
+                  href={`${link.url.length > 7 ? link.url : "/" + link.url}`}
+                >
                   <a>{link.title}</a>
                 </Link>
               </li>
@@ -79,12 +81,12 @@ export default function Nav() {
             <div className="flex items-center">
               <Toggler />
               <img
-                src="./cancel.svg"
+                src="/cancel.svg"
                 className="ml-7 dark:hidden"
                 onClick={closeNav}
               />
               <img
-                src="./cancel_dark.svg"
+                src="/cancel_dark.svg"
                 className="ml-7 hidden dark:block"
                 onClick={closeNav}
               />
@@ -92,12 +94,12 @@ export default function Nav() {
           ) : (
             <div>
               <img
-                src="./hamburger.svg"
+                src="/hamburger.svg"
                 onClick={openNav}
                 className="dark:hidden"
               />
               <img
-                src="./dark_hamburger.svg"
+                src="/dark_hamburger.svg"
                 onClick={openNav}
                 className="hidden dark:block"
               />

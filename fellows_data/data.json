@@ -1,6 +1,6 @@
 [
   {
-    "image": "./fellows/omoniyi.png",
+    "image": "/fellows/omoniyi.png",
     "name": "Omoniyi Ilesanmi",
     "role": "Fullstack Developer",
     "background": "Full stack Java/Spring Boot developer with PHP, python, typescript and React JS exposure. Built his own educational blockchain project from scratch.",
@@ -20,7 +20,7 @@
     "skills": ["Java", "Spring", "PHP", "TypeScript", "ReactJs"]
   },
   {
-    "image": "./fellows/collins.png",
+    "image": "/fellows/collins.png",
     "name": "Collin Rukundo",
     "role": "Fullstack Developer",
     "background": "Experienced civic technologist with a Bachelor’s degree in Computer Science specialising in Python, the Django Web Framework and Wagtail CMS. Through his company Matchstick Studio, he’s built tools that make soft skilling easier, track data coming out of parliament of Uganda, and contextualise available data on various districts. He wants to work in Bitcoin for social good including addressing police violence and LGBT rights.",
@@ -43,7 +43,7 @@
     "skills": ["Python", "Django", "Wagtail CMS"]
   },
   {
-    "image": "./fellows/enie.png",
+    "image": "/fellows/enie.png",
     "name": "Enigbe Ochekliye",
     "role": "Fullstack Developer",
     "background": "Trained as a mechanical engineer and CAD designer, Eni has since transitioned into software development. Solid knowledge of Python and Flask she has exposure to Javascript/Typescript, NodeJS, some Golang, and is currently focusing on learning Rust. She quit her job to focus full time on studying Bitcoin in January.",
@@ -76,7 +76,7 @@
     ]
   },
   {
-    "image": "./fellows/theo.png",
+    "image": "/fellows/theo.png",
     "name": "Theophilus Isah",
     "role": "Fullstack Developer",
     "background": "Typecript/JS, React and been learning Rust.",
@@ -100,7 +100,7 @@
     "skills": ["TypeScript", "JavaScript", "React", "Rust"]
   },
   {
-    "image": "./fellows/jenie.png",
+    "image": "/fellows/jenie.png",
     "name": "Jennifer Ezeobi",
     "role": "Fullstack Developer",
     "background": "Started out in tech with web dev, familiar with HTML, CSS, Javascript, Nodejs, and a bit of cloud computing.",
@@ -123,7 +123,7 @@
     "skills": ["JavaScript", "TypeScript", "NodeJS"]
   },
   {
-    "image": "./fellows/olutobi.png",
+    "image": "/fellows/olutobi.png",
     "name": "Olutobi Adeyemi",
     "role": "Fullstack Developer",
     "background": "4+ years of professional experience. React, React Native and NodeJS. He’s been building his own wallet in React.",
@@ -144,7 +144,7 @@
     "skills": ["React", "React Native", "NodeJS"]
   },
   {
-    "image": "./fellows/peter.png",
+    "image": "/fellows/peter.png",
     "name": "Peter Tyonum",
     "role": "Fullstack Developer",
     "background": "CS/Statistics graduate with 4+ experience in JS/Node, Vue.js, PHP/Laravel and been learning Rust.",
@@ -171,7 +171,7 @@
     "skills": ["JavaScript", "NodeJS", "Vue", "PHP", "Laravel", "Rust"]
   },
   {
-    "image": "./fellows/raphael.png",
+    "image": "/fellows/raphael.png",
     "name": "Raphael Osaze Eyerin",
     "role": "Fullstack Developer",
     "background": "Full Stack Engineer with 4 years of JavaScript, ReactNative, and Scala. Along with being an experienced dev, Raphael loves to build and write",
@@ -202,7 +202,7 @@
     "skills": ["JavaScript", "React Native", "Scala"]
   },
   {
-    "image": "./fellows/vlad.png",
+    "image": "/fellows/vlad.png",
     "name": "Vladimir Fomene",
     "role": "Fullstack Developer",
     "background": "Graduated with a CS degree and now a full stack developer with experience in  JS and Python and excited about Rust. He cares deeply about the permissionlessness of bitcoin. He sees it as a way to help fight in a peaceful way against oppression. He also appreciates a supply schedule that isn't subject to arbitrary changes and sees it as a replacement for colonial currencies like the CFA.",
@@ -229,7 +229,7 @@
     "skills": ["JavaScript", "Python", "Rust"]
   },
   {
-    "image": "./fellows/dimeji.png",
+    "image": "/fellows/dimeji.png",
     "name": "Oladimeji Omotosho",
     "role": "Fullstack Developer",
     "background": "Java, Python, and JavaScript",
@@ -246,7 +246,7 @@
     "skills": ["Java", "Python", "JavaScript"]
   },
   {
-    "image": "./fellows/munirat.png",
+    "image": "/fellows/munirat.png",
     "name": "Munirat Olayiwola",
     "role": "Software Engineer",
     "background": "Backend developer, using python and Django framework, also works with the cloud using google cloud and AWS.",
@@ -273,7 +273,7 @@
     "skills": ["Python", "Django", "AWS"]
   },
   {
-    "image": "./fellows/bamidele.png",
+    "image": "/fellows/bamidele.png",
     "name": "Bamidele Oluwatobi",
     "role": "Fullstack Developer",
     "background": "Both frontend and backend development mainly with Javascript/Typescript, NodeJs and React",

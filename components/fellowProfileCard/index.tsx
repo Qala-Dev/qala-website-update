@@ -1,6 +1,7 @@
 import P from "~/components/resuable/paragraph";
 import GitHub from "~/components/resuable/github";
 import Medium from "~/components/resuable/meduim";
+import { useRouter } from "next/router";
 
 interface Props {
   image: string;
@@ -8,6 +9,7 @@ interface Props {
   role: string;
   github: string;
   meduim: string;
+  id: number;
 }
 export default function FellowProfileCard({
   image,
@@ -15,7 +17,9 @@ export default function FellowProfileCard({
   role,
   github,
   meduim,
+  id,
 }: Props) {
+  const router = useRouter();
   return (
     <div className="flex flex-col w-[10.25rem] lg:w-[15.5rem] mt-[3rem] lg:mt-[5.5rem]">
       <img src={image} alt={name} className="" />
@@ -31,7 +35,10 @@ export default function FellowProfileCard({
             </div>
             <Medium link={meduim} />
           </div>
-          <div className="rounded border border-nav-blue dark:border-light-bg cursor-pointer px-[0.875rem] py-[3px] lg:px-[1.125rem] lg:py-[0.34rem]">
+          <div
+            onClick={() => router.push(`/hire/fellows/${id}`)}
+            className="rounded border border-nav-blue dark:border-light-bg cursor-pointer px-[0.875rem] py-[3px] lg:px-[1.125rem] lg:py-[0.34rem]"
+          >
             <p className="text-xs lg:text-sm text-nav-blue dark:text-light-bg">
               View Profile
             </p>

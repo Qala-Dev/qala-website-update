@@ -48,6 +48,7 @@ export default function Fellows() {
               key={index}
               github={fellow.github}
               meduim={fellow.medium}
+              id={index}
             />
           ))}
         </div>

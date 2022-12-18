@@ -10,8 +10,7 @@ import { useRouter } from "next/router";
 import FellowBlog from "~/components/resuable/blog";
 
 interface Props {
-  fellowIndex: number;
-  setCurrentPage: (page: number) => void;
+  fellowId: number;
 }
 
 interface Project {
@@ -19,28 +18,10 @@ interface Project {
   link: string;
 }
 
-export default function FellowDetails({ fellowIndex, setCurrentPage }: Props) {
-  const fellowDetail = FellowData[fellowIndex];
-  const skills: string[] = [
-    "JavaScript",
-    "ReactNative",
-    "React",
-    "Scala",
-    "Python",
-    "Android",
-    "Vue",
-    "Devops",
-    "Data Engineer",
-  ];
+export default function FellowDetails({ fellowId }: Props) {
+  const fellowDetail = FellowData[fellowId];
 
   const router = useRouter();
-
-  const Projects: Project[] = [
-    { name: "Fullstack JaveScript Bitcoin Wallet", link: "https://github.com" },
-    { name: "Bitcoin Bank", link: "https://github.com" },
-    { name: "Tora", link: "https://github.com" },
-    { name: "TeamTREVLNpay", link: "https://github.com" },
-  ];
 
   const handleProjectLink = (link: string) => {
     router.push(link);
@@ -50,40 +31,40 @@ export default function FellowDetails({ fellowIndex, setCurrentPage }: Props) {
     <main className="px-4 lg:px-[10.9rem]">
       <div
         className="flex items-center mt-10 lg:mt-16 cursor-pointer"
-        onClick={() => setCurrentPage(2)}
+        onClick={() => router.push("./")}
       >
-        <img src="./back_icon.svg" alt="Back" className="mr-2" />
+        <img src="/back_icon.svg" alt="Back" className="mr-2" />
         <p className="text-sm lg:text-base text-nav-blue dark:text-primary-1">
-          Back to Hire Page
+          Back to Fellows
         </p>
       </div>
       <div className="flex flex-col lg:flex-row mt-8 lg:mt-16 lg:justify-between mb-20 lg:mb-60">
         <div className="w-full lg:w-[19.4rem] flex flex-col">
-          <img src={fellowDetail.image} />
+          <img src={fellowDetail?.image} />
           <div className="flex flex-col mt-6 lg:mt-8">
             <p className=" text-base text-nav-blue dark:text-primary-1 lg:text-xl">
-              {fellowDetail.name}
+              {fellowDetail?.name}
             </p>
             <p className="mt-1 text-nav-blue dark:text-primary-1 font-bold text-sm lg:text-lg">
-              {fellowDetail.role}
+              {fellowDetail?.role}
             </p>
           </div>
           <div className="flex mt-4">
             <div className="mr-2">
-              <Github link={fellowDetail.github} />
+              <Github link={fellowDetail?.github} />
             </div>
             <div className="mr-2">
-              <Meduim link={fellowDetail.medium} />
+              <Meduim link={fellowDetail?.medium} />
             </div>
             <div className="mr-2">
-              <LinkedIn link={fellowDetail.linkedin} />
+              <LinkedIn link={fellowDetail?.linkedin} />
             </div>
             <div>
-              <Twitter link={fellowDetail.twitter} />
+              <Twitter link={fellowDetail?.twitter} />
             </div>
           </div>
           <div className="flex flex-wrap mt-4">
-            {skills.map((skill, index) => (
+            {fellowDetail?.skills.map((skill, index) => (
               <div className="mr-2 mt-3" key={index}>
                 <Skill skill={skill} />
               </div>
@@ -93,22 +74,22 @@ export default function FellowDetails({ fellowIndex, setCurrentPage }: Props) {
         <div className="w-full lg:w-[40.25rem]">
           <div className="mt-8 md:mt-0">
             <SubTitle text="Technical background" />
-            <Paragraph className="mt-4">{fellowDetail.background}</Paragraph>
+            <Paragraph className="mt-4">{fellowDetail?.background}</Paragraph>
           </div>
           <div className="mt-8">
             <SubTitle text="Why is Bitcoin important to you?" />
-            <Paragraph className="mt-4">{fellowDetail.why_bitcoin}</Paragraph>
+            <Paragraph className="mt-4">{fellowDetail?.why_bitcoin}</Paragraph>
           </div>
           <div className="mt-8">
             <SubTitle text="What has been the best part about learning at Qala?" />
             <Paragraph className="mt-4">
-              {fellowDetail.learning_at_qala}
+              {fellowDetail?.learning_at_qala}
             </Paragraph>
           </div>
           <div className="mt-8">
             <SubTitle text="Notable projects" />
             <ul className="mt-4">
-              {fellowDetail.projects.map((project, index) => (
+              {fellowDetail?.projects.map((project, index) => (
                 <li
                   className=" italic list-disc text-nav-blue dark:text-primary-1 font-semibold text-sm md:text-lg ml-6"
                   key={index}
