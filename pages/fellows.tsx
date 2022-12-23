@@ -18,7 +18,7 @@ export default function Fellows() {
               Lightning. Meet the fellows who have completed the Qala 13-weeks
               fellowship."
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/qala.ico" />
       </Head>
       <main>
         <div className="flex flex-col items-center">

@@ -10,7 +10,7 @@ export default function HireFellow() {
           name="description"
           content="Check out our vast talent network of bitcoin developers"
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/qala.ico" />
       </Head>
       <Fellows />
     </>

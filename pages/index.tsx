@@ -68,7 +68,7 @@ const Home: NextPage = () => {
                 developers."
         />
 
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/qala.ico" />
       </Head>
       <main>
         <div className="flex items-center justify-center">

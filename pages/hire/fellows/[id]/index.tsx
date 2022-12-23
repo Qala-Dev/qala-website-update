@@ -8,7 +8,7 @@ export default function FellowDetails() {
     <>
       <Head>
         <title>Qala Fellow</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/qala.ico" />
       </Head>
       <Details fellowId={parseInt(router.query.id! as string)} />
     </>

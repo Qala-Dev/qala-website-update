@@ -22,7 +22,7 @@ const Apply: NextPage = () => {
           content="At Qala, our goal is to create a pathway for African software
           developers to transition into building for Bitcoin."
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/qala.ico" />
       </Head>
       <main>
         <div className="w-full relative flex justify-center items-center flex-col">

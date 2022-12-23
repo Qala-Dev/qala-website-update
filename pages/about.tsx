@@ -22,7 +22,7 @@ const About: NextPage = () => {
           opportunity. This is the challenge that the team at Qala Africa
           is working to resolve."
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/qala.ico" />
       </Head>
       <main>
         <div className="w-full relative flex justify-center items-center flex-col">

@@ -12,7 +12,7 @@ export default function HirePage() {
           alike. When you hire a Qala Bitcoin developer, you get a
           professional who can execute projects quickly and efficiently."
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/qala.ico" />
       </Head>
       <Hire />
     </>

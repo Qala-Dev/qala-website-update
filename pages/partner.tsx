@@ -36,7 +36,7 @@ export default function Partner() {
           content="We are always thrilled and delighted to collaborate with
                 organisations whose vision aligns with ours."
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/qala.ico" />
       </Head>
       <main>
         <div className="w-full relative flex justify-center items-center flex-col">
