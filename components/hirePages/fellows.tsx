@@ -17,7 +17,7 @@ export default function Fellows() {
       </div>
       <div className="flex items-center justify-center">
         <h2 className="font-Gilroy font-light mt-16 w-full lg:w-[48.4rem] text-xl lg:text-[2.5rem] lg:leading-[2.9rem] text-center">
-          Check out our vast talent network of blockchain developers
+          Check out our vast talent network of bitcoin developers
         </h2>
       </div>
       <div className="flex flex-wrap px-4 lg:px-[10.9rem] justify-between mb-8 lg:mb-32">

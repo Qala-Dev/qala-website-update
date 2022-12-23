@@ -13,19 +13,10 @@ interface Props {
   fellowId: number;
 }
 
-interface Project {
-  name: string;
-  link: string;
-}
-
 export default function FellowDetails({ fellowId }: Props) {
   const fellowDetail = FellowData[fellowId];
 
   const router = useRouter();
-
-  const handleProjectLink = (link: string) => {
-    router.push(link);
-  };
 
   return (
     <main className="px-4 lg:px-[10.9rem]">
@@ -129,3 +120,13 @@ export default function FellowDetails({ fellowId }: Props) {
     </main>
   );
 }
+
+export const getServerSideProps = async ({ fellowId }: Props) => {
+  const fellowDetail = FellowData[fellowId];
+
+  return {
+    props: {
+      fellowDetail,
+    },
+  };
+};
