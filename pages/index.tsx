@@ -2,7 +2,6 @@
 /* eslint-disable @next/next/no-img-element */
 import type { NextPage } from "next";
 import Head from "next/head";
-import Image, { StaticImageData } from "next/image";
 import H1 from "~/components/resuable/H1";
 import Button from "~/components/resuable/button";
 import InvertedContainer from "~/components/resuable/invertedContainer";
@@ -17,12 +16,12 @@ import Shop from "~/components/shop";
 import Input from "~/components/resuable/input";
 
 const Carousels: string[] = [
-  "carousel_1.png",
-  "carousel_2.png",
+  "qala_carousel.jpeg",
+  "qala_carouse2.jpeg",
   "carousel_3.png",
   "carousel_4.png",
-  "carousel_2.png",
-  "carousel_1.png",
+  "qala_carousel.jpeg",
+  "qala_carouse2.jpeg",
   "carousel_4.png",
   "carousel_3.png",
 ];
@@ -111,7 +110,7 @@ const Home: NextPage = () => {
                   }`}
                 >
                   <img
-                    src={`./${image}`}
+                    src={`/${image}`}
                     alt="caraousel"
                     className=" pointer-events-none w-full h-full object-cover"
                   />
